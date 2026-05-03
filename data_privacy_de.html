@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rechtliches &amp; Info</title>
+  <style>
+    :root {
+      --bg: #151a21;
+      --text: rgba(255, 255, 255, 0.88);
+      --muted: rgba(255, 255, 255, 0.65);
+      --accent: #a8c7ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 3rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2.25rem 0 0.75rem;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+    main > section:first-child h1 { margin-top: 0; }
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin: 1.75rem 0 0.5rem;
+      color: #fff;
+    }
+    p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+    a:hover { color: #cfe0ff; }
+</style>
+</head>
+<body>
+  <main>
+    <section class="imprint">
+      <h1>Impressum</h1>
+
+      <p>Five Letter Game</p>
+      <p>Angaben gemäß § 5 TMG / Informationspflicht:</p>
+      <p>Verantwortlich:<br>
+      Christian Pesch, Rosenhagener Str. 30, 12621 Berlin, Germany</p>
+      <p>Kontakt: <a href="mailto:fivelettergame.support@gmail.com">fivelettergame.support@gmail.com</a></p>
+      <p>Die Musik in dieser App wird von <a href="https://mobygratis.com">mobygratis</a> lizenziert.</p>
+    </section>
+    <section class="privacy">
+      <h1>Datenschutz</h1>
+
+      <p>Stand: April 2026</p>
+      <p>Diese Datenschutzhinweise berücksichtigen die Anforderungen der Datenschutz-Grundverordnung (DSGVO), soweit diese anwendbar ist.</p>
+      <p>Verantwortlicher: Christian Pesch, Rosenhagener Str. 30, 12621 Berlin, Germany</p>
+      <p>Hosting: Das Spiel-Backend wird in der Europäischen Union betrieben. Es werden keine Unterauftragsverarbeiter eingesetzt. Für das Hosting ist kein gesonderter Drittanbieter als Auftragsverarbeiter eingeschaltet. Die Kommunikation zwischen der App und dem Spiel-Backend erfolgt verschlüsselt (HTTPS, TLS).</p>
+      <p>Die App integriert keine Drittanbieter-Werbe- oder Analyse-SDKs.</p>
+      <p>Keine Übermittlung personenbezogener Daten in Drittländer ist vorgesehen.</p>
+      <h2>Lokal auf dem Gerät gespeicherte Daten</h2>
+      <p>Die App speichert Daten auf dem Gerät über die übliche App-Speicherung des Systems. Dazu gehören: eine pseudonyme Spielerkennung (UUID), die für deine Installation erzeugt wird und bei Online-Funktionen oder beim Vorschlagen eines Wörterbuch-Worts verwendet wird; dein gewählter Anzeigename sowie – bei lokalem Zwei-Spieler-Modus auf diesem Gerät – der Anzeigename für Spieler zwei; Merkmale für App-Dialoge (z. B. ob du deinen Online-Anzeigenamen bestätigt hast); Spielstatistiken, Erfolge und Fortschritt; Einstellungen für Musik und Ton; sowie Fortschritt beim Wort des Tages (z. B. Serien und ob ein Tag abgeschlossen wurde).</p>
+      <p>Damit werden Fortschrittsanzeige und Belohnungen im Spiel ermöglicht, Einstellungen gespeichert und das Matchmaking für Online-Partien unterstützt (Zusammenfassungen können wie unten beschrieben auch an den Server gesendet werden). Die Daten verbleiben auf dem Gerät, bis du die Anwendung löschst. Statistiken und Fortschritt kannst du in der App zurücksetzen.</p>
+      <h2>Lokal und online</h2>
+      <p>Die folgenden Modi laufen auf dem Gerät, ohne das Spiel-Backend zu nutzen: Wort des Tages, 1P vs CPU und 2P - auf diesem Gerät. Der Modus 2P - online nutzt das Backend wie unten beschrieben.</p>
+      <h2>Online-Zwei-Spieler (2P online)</h2>
+      <p>Wenn du eine Online-Partie startest oder einer Sitzung beitrittst, verbindet sich die App mit diesem Backend. Bei der Anmeldung oder dem Beitreten werden u. a. übermittelt: eine pseudonyme Spieler-ID (UUID), dein gewählter Anzeigename, die gewählte Spielsprache, dein Geheimwort für diese Partie, die Geräteplattform (z. B. iOS, Android, macOS) sowie zusammenfassende Werte zur Paarung aus dieser App (Anzahl gespielter Partien und Mehrspieler-Siege). Online-2P-Partien unterliegen einem automatisierten Matchmaking, das auf diesen übermittelten Statistikwerten basieren kann. Wie bei jedem Internetdienst können technische Verbindungsdaten (z. B. IP-Adressen) auf dem Server für den Betrieb, Missbrauchsanalyse und Fehleranalyse verarbeitet werden.</p>
+      <h2>Vorschlag für ein neues Wörterbuch-Wort</h2>
+      <p>Vorschläge werden nur an das Backend übermittelt, wenn Du das im Dialog ausdrücklich bestätigst. Dann sendet die App einmalig u. a.: das vorgeschlagene Wort, die Wörterbuch-Sprache, deine Spieler-UUID, die Plattform sowie Versionskennungen von App und Wörterbuch. Du kannst ablehnen, ohne Nachteile.</p>
+      <h2>Aufbewahrung auf dem Backend</h2>
+      <p>Online-Partien: Partiebezogene Daten werden auf dem Backend nur während einer laufenden Partie gespeichert – in der Phase der Einladung, beim Warten auf Spieler und während des laufenden Spiels.</p>
+      <p>Wörterbuch-Vorschläge: Vorschläge können zur Prüfung bis zu sechs Monate gespeichert werden. Nach der Prüfung wird jeder Vorschlag entweder angenommen oder abgelehnt und anschließend aus dem Backend entfernt.</p>
+      <p>Technische Server-Logs: Verbindungs- und Betriebsprotokolle werden zur Sicherstellung des Dienstbetriebs, zur Missbrauchserkennung und zur Fehleranalyse bis zu sechs Monate gespeichert.</p>
+      <h2>Rechtsgrundlage (soweit anwendbar)</h2>
+      <p>Soweit nach anwendbarem Recht erforderlich, erfolgt die Verarbeitung für Online-Spiel und Sitzungsbetrieb auf Grundlage der Vertragserfüllung oder vorvertraglicher Maßnahmen. Optionale Vorschläge für neue Wörterbuch-Wörter erfolgen auf Grundlage deiner Einwilligung. Verarbeitungen für den sicheren technischen Betrieb, Missbrauchsanalyse und Fehleranalyse erfolgen, soweit anwendbar, auf Grundlage berechtigter Interessen (insbesondere Aufrechterhaltung der Dienstsicherheit und Stabilität, Missbrauchs- und Betrugsprävention sowie Fehlerbehebung und Qualitätssicherung).</p>
+      <h2>Deine Rechte</h2>
+      <p>Du hast nach Maßgabe der geltenden Datenschutzgesetze u. a. Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine Einwilligung zur Wort-Vorschlagsfunktion kannst du jederzeit mit Wirkung für die Zukunft widerrufen; die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. Du hast das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen.</p>
+      <h2>Aufsichtsbehörde</h2>
+      <p>Für Beschwerden kannst du dich an die zuständige Datenschutzaufsichtsbehörde wenden, insbesondere an die Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI). Bürgerinnen und Bürger aus anderen EU-/EWR-Staaten können sich außerdem an die Datenschutzaufsichtsbehörde ihres gewöhnlichen Aufenthaltsorts wenden.</p>
+      <h2>Antwortfristen</h2>
+      <p>Wir beantworten Anfragen zu Datenschutzrechten innerhalb der nach anwendbarem Recht vorgesehenen Fristen, in der Regel innerhalb eines Monats nach Eingang der Anfrage (bei komplexen Fällen ggf. mit zulässiger Verlängerung).</p>
+      <h2>Kontakt und deine Spieler-ID</h2>
+      <p>Um deine Rechte auszuüben oder zu widerrufen, kontaktiere den Verantwortlichen per E-Mail unter der im Impressum genannten Adresse und gib deine Spieler-UUID an. Du kannst die Spieler-UUID in die Zwischenablage kopieren, indem du auf dem Hauptmenü den Spieltitel gedrückt hältst.</p>
+      <h2>Aktualisierungen dieser Datenschutzhinweise</h2>
+      <p>Diese Datenschutzhinweise können von Zeit zu Zeit aktualisiert werden. Maßgeblich ist die jeweils in der App und in den veröffentlichten Datenschutzhinweisen angegebene aktuelle Fassung mit dem dort genannten Stand-Datum.</p>
+    </section>
+    <section class="age">
+      <h1>Altersempfehlung</h1>
+      <p>Dieses Spiel ist ab 13 Jahren geeignet, da einige Wörter im Spiel als anstößig empfunden werden können, etwa Begriffe zu Körperteilen, Waffen oder Beleidigungen; Gegner können solche Wörter als Geheimwort oder Rateversuche wählen.</p>
+    </section>
+  </main>
+</body>
+</html>

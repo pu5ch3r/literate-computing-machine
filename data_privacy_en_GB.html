@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legal &amp; About</title>
+  <style>
+    :root {
+      --bg: #151a21;
+      --text: rgba(255, 255, 255, 0.88);
+      --muted: rgba(255, 255, 255, 0.65);
+      --accent: #a8c7ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 3rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2.25rem 0 0.75rem;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+    main > section:first-child h1 { margin-top: 0; }
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin: 1.75rem 0 0.5rem;
+      color: #fff;
+    }
+    p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+    a:hover { color: #cfe0ff; }
+</style>
+</head>
+<body>
+  <main>
+    <section class="imprint">
+      <h1>Imprint</h1>
+
+      <p>Five Letter Game</p>
+      <p>Information provided in accordance with applicable transparency requirements:</p>
+      <p>Responsible / service provider:<br>
+      Christian Pesch, Rosenhagener Str. 30, 12621 Berlin, Germany</p>
+      <p>Contact: <a href="mailto:fivelettergame.support@gmail.com">fivelettergame.support@gmail.com</a></p>
+      <p>The music in this app is licensed by <a href="https://mobygratis.com">mobygratis</a>.</p>
+    </section>
+    <section class="privacy">
+      <h1>Privacy</h1>
+
+      <p>Last updated: April 2026</p>
+      <p>This privacy notice is prepared with the EU General Data Protection Regulation (GDPR) in mind.</p>
+      <p>Data controller: Christian Pesch, Rosenhagener Str. 30, 12621 Berlin, Germany</p>
+      <p>Hosting: The game backend is operated in the European Union. No subprocessors are used. No separate third-party hosting or cloud provider acts as a processor on our behalf. Communication between the app and the game backend uses encrypted connections (HTTPS, TLS).</p>
+      <p>This app does not integrate third-party advertising or analytics SDKs.</p>
+      <p>No transfer of personal data to third countries is intended.</p>
+      <h2>Local data on your device</h2>
+      <p>The app persists data on your device using the platform’s normal app storage. This includes: a pseudonymous player identifier (UUID) created for your installation, used when you use online features or submit a dictionary word suggestion; your chosen display name, and—for local two-player games on this device—the display name for player two; in-app dialog flags (for example whether you have confirmed your online display name); gameplay statistics, achievements, and progress; music and related audio preferences; and word-of-the-day progress (such as streaks and completion).</p>
+      <p>This supports progress tracking and in-game rewards, remembering your settings, and matchmaking for online matches (summary figures may also be sent to the server as described below). This data is kept on the device until the application is deleted. You can reset statistics and progress in the app.</p>
+      <h2>Local and online game modes</h2>
+      <p>The following modes run on your device without using the game backend: Word of the day, 1P vs CPU, and 2P - on this device. The mode 2P - online uses the backend as described below.</p>
+      <h2>Online two-player (2P online)</h2>
+      <p>When you start or join an online match, the app connects to this backend. For sign-in or joining a session, the following are sent: a pseudonymous player ID (UUID), your chosen display name, the selected game language, your secret word for that match, your device platform (e.g. iOS, Android, macOS), and summary matchmaking figures from this app (games played and multiplayer wins). Online 2P matches are subject to automated matchmaking, which may use these submitted statistical figures. As with any internet service, technical connection data (such as IP addresses) may be processed on the server for service operation, abuse analysis, and error analysis.</p>
+      <h2>Suggesting a new dictionary word</h2>
+      <p>This only happens if you explicitly confirm in the in-app dialog. A one-off request then sends: the suggested word, the dictionary language, your player UUID, platform, and app/dictionary version identifiers. You may refuse without disadvantage.</p>
+      <h2>Backend data retention</h2>
+      <p>Online matches: Match-related information is stored on the backend only while a match is ongoing—that includes invitation, waiting for players, and while the game is in progress.</p>
+      <p>Dictionary word suggestions: Suggestions may be stored for up to six months for review. After a proposal is reviewed, it is either accepted or rejected and then removed from the backend.</p>
+      <p>Technical server logs: Connection and operations logs are retained for up to six months to ensure service operation, detect abuse, and perform error analysis.</p>
+      <h2>Legal basis (where applicable)</h2>
+      <p>Where required by applicable law, processing for online gameplay and session operation is based on contract performance or steps prior to entering into a contract. Optional dictionary word suggestions are based on your consent. Processing needed for secure technical operation, abuse analysis, and error analysis is based on legitimate interests where applicable (in particular maintaining service security and stability, abuse/fraud prevention, and troubleshooting/quality assurance).</p>
+      <h2>Your rights</h2>
+      <p>Under applicable data protection law you have rights including access, rectification, erasure, restriction, data portability, and objection where applicable. You may withdraw consent for word suggestions at any time with effect for the future; withdrawal does not affect the lawfulness of processing before withdrawal. You have the right to lodge a complaint with a supervisory authority.</p>
+      <h2>Supervisory authority</h2>
+      <p>You may lodge a complaint with a competent data protection supervisory authority, in particular the Berlin Commissioner for Data Protection and Freedom of Information (BlnBDI). If you are an EU/EEA resident in another country, you may also contact the supervisory authority at your habitual place of residence.</p>
+      <h2>Response timelines</h2>
+      <p>We respond to privacy-rights requests within the timelines required by applicable law, typically within one month of receiving your request (with a lawful extension where permitted for complex cases).</p>
+      <h2>Contact and your player ID</h2>
+      <p>To exercise your rights or withdraw consent, email the controller at the address in the imprint and include your player UUID so we can identify your data. Copy your player UUID to the clipboard by long-pressing the game title on the main menu.</p>
+      <h2>Updates to this privacy notice</h2>
+      <p>We may update this privacy notice from time to time. The current version is the one published in the app and in the public privacy notice, identified by its last-updated date.</p>
+    </section>
+    <section class="age">
+      <h1>Age recommendation</h1>
+      <p>This game is suitable for age 13+, as some words in the game may be perceived as offensive—for example, terms referring to body parts, weapons, or insults—and opponents may choose such words as their secret word or guesses.</p>
+    </section>
+  </main>
+</body>
+</html>
