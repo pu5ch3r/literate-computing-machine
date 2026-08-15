@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five Letter Game — Invite</title>
+  <style>
+    :root {
+      --bg: #151a21;
+      --text: rgba(255, 255, 255, 0.88);
+      --muted: rgba(255, 255, 255, 0.65);
+      --accent: #a8c7ff;
+      --btn: #3d5a80;
+      --btn-text: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 3rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+    p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    a.btn {
+      display: block;
+      text-align: center;
+      padding: 0.85rem 1rem;
+      border-radius: 0.5rem;
+      background: var(--btn);
+      color: var(--btn-text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.btn:hover { filter: brightness(1.08); }
+    a.btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: var(--accent);
+      font-weight: 500;
+    }
+    a { color: var(--accent); }
+    code {
+      font-size: 0.95em;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Five Letter Game</h1>
+    <p id="invite-line">Open this invite in the app to join the match.</p>
+    <p id="code-line" hidden>Session code: <code id="code"></code></p>
+    <div class="actions">
+      <a class="btn" id="open-app" href="fivelettergame://invite">Open in app</a>
+      <a class="btn secondary" href="https://apps.apple.com/app/id6746115265">Get on the App Store</a>
+      <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.nerdsunited.fivelettergame">Get on Google Play</a>
+    </div>
+    <p>If the app is already installed, use <strong>Open in app</strong>. Otherwise install it, then open this link again.</p>
+  </main>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var code = (params.get('session_code') || params.get('code') || '').trim();
+      var player = (params.get('player') || '').trim();
+      var qs = new URLSearchParams();
+      if (code) qs.set('session_code', code);
+      if (player) qs.set('player', player);
+      var query = qs.toString();
+      var deepLink = 'fivelettergame://invite' + (query ? ('?' + query) : '');
+      var openApp = document.getElementById('open-app');
+      openApp.href = deepLink;
+
+      if (player) {
+        document.getElementById('invite-line').textContent =
+          player + ' invited you to a match. Open the app to join.';
+      }
+      if (code) {
+        document.getElementById('code').textContent = code;
+        document.getElementById('code-line').hidden = false;
+      }
+    })();
+  </script>
+</body>
+</html>
